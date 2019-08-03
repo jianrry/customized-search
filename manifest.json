@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "自定义搜索引擎搜索",
+    "version": "1.0.0",
+    "description": "使用自定义搜索引擎搜索",
+    "icons":
+    {
+        "16": "img/16.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    },
+    "permissions":["contextMenus"],
+    "background":
+    {
+        "scripts": ["js/background.js"]
+    }
+}
