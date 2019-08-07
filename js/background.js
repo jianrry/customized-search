@@ -16,3 +16,13 @@ chrome.contextMenus.create({
     }
 });
 
+
+chrome.contextMenus.create({
+    title: "使用动漫花园搜索：'%s'", 
+    contexts: ['selection'], 
+    onclick: function(params)
+    {
+        chrome.tabs.create({url: 'https://share.dmhy.org/topics/list?keyword=' + encodeURI(params.selectionText)});
+    }
+});
+
