@@ -37,3 +37,13 @@ chrome.contextMenus.create({
     }
 });
 
+
+chrome.contextMenus.create({
+    title: "Steam网页激活key：'%s'", 
+    contexts: ['selection'], 
+    onclick: function(params)
+    {
+        chrome.tabs.create({url: 'https://store.steampowered.com/account/registerkey?key=' + encodeURI(params.selectionText)});
+    }
+});
+
