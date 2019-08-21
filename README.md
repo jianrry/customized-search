@@ -1,4 +1,4 @@
-CustomizedSearch是一款谷歌浏览器插件，可以通过修改配置文件，实现添加自定义搜索引擎到谷歌浏览器右键菜单。
+customized-search是一款谷歌浏览器插件，可以通过修改配置文件，实现添加自定义搜索引擎到谷歌浏览器右键菜单。
 
 
 ## 截图：
@@ -11,7 +11,7 @@ CustomizedSearch是一款谷歌浏览器插件，可以通过修改配置文件�
 
 ## 安装：
 
-GitHub项目地址：<https://github.com/jianrry/CustomizedSearch>
+GitHub项目地址：<https://github.com/jianrry/customized-search>
 
 ### 1.下载
 
