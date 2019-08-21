@@ -9,31 +9,11 @@ chrome.contextMenus.create({
 
 
 chrome.contextMenus.create({
-    title: "使用维基百科（英文）搜索：'%s'", 
+    title: "使用GitHub搜索：'%s'", 
     contexts: ['selection'], 
     onclick: function(params)
     {
-        chrome.tabs.create({url: 'https://en.wikipedia.org/wiki/' + encodeURI(params.selectionText)});
-    }
-});
-
-
-chrome.contextMenus.create({
-    title: "使用动漫花园搜索：'%s'", 
-    contexts: ['selection'], 
-    onclick: function(params)
-    {
-        chrome.tabs.create({url: 'https://share.dmhy.org/topics/list?keyword=' + encodeURI(params.selectionText)});
-    }
-});
-
-
-chrome.contextMenus.create({
-    title: "使用漫画堆搜索：'%s'", 
-    contexts: ['selection'], 
-    onclick: function(params)
-    {
-        chrome.tabs.create({url: 'https://www.manhuadui.com/search/?keywords=' + encodeURI(params.selectionText)});
+        chrome.tabs.create({url: 'https://github.com/search?q=' + encodeURI(params.selectionText)});
     }
 });
 
@@ -46,4 +26,6 @@ chrome.contextMenus.create({
         chrome.tabs.create({url: 'https://store.steampowered.com/account/registerkey?key=' + encodeURI(params.selectionText)});
     }
 });
+
+
 
